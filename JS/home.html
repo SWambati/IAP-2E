@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Tutorial</title>
+</head>
+<body>
+    <p id="intro"></p>
+    <p id="welcome"></p>
+    <script src="new.js"></script>
+
+    <p id="day">It is <u style="cursor: pointer;">Monday</u></p>
+
+    <script>
+        document.getElementById('intro').innerHTML = "Hello User!";
+        document.getElementById('intro').style.fontWeight= "40px";
+    </script>
+
+    <script>
+        const parameter = document.getElementById('day');
+        parameter.addEventListener('click', updateDay);
+
+        function updateDay(){
+            let day = prompt("Enter a day of the week: ");
+            parameter.textContent = 'It is '+day;
+
+        }
+       
+    </script>
+    <br> <br>
+    <script>
+        let result = mySum(23, 43)
+
+        function mySum(a, b){
+          
+            return a + b;
+        }
+
+    </script>
+    
+        <button onclick="document.write(4+6)">Basic Sum of 4+6</button>
+        <br>
+    <script>
+        const distance = 150;
+        const time = 10;
+        const speed = distance/time;
+        document.write("The speed is "+speed); 
+
+    </script>
+<br><br>
+    <script>
+        const weather = prompt("Enter the current weather: ");
+        if(weather === 'sunny'){
+            document.write('Dress lightly and apply sunscreen');
+        }
+        else if( weather === 'rainy'){
+            document.write('Carry an umbrella and wear gumboots');
+
+        }
+        else if( weather === 'snowy'){
+            document.write('Dress warmly');
+
+        }
+        else{
+            document.write('Might as well stay at home');
+        }
+        
+    </script>
+
+    
+    
+</body>
+</html>
+
